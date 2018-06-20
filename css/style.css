@@ -5,8 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Spectral+SC:400,700');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:700|Scada');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC:400,700'),
+ 		url('https://fonts.googleapis.com/css?family=PT+Sans:700|Scada');
+ 		/* url('https://fonts.googleapis.com/css?family=Spirax'); */
 * {
 	box-sizing: border-box;
 }
@@ -33,7 +34,7 @@ body{
 }
 .menu__logo {
 	font-family: Forever, serif;
-	font-size: 50px;
+	font-size: 6em;
 	color: #fff;
 }
 .menu-flex {
@@ -46,19 +47,21 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	height: 50vh;
+	margin-bottom: 5vh;
 }
 .menu__nav {
 	text-align: center;
-	/* font-family: 'Abril Fatface', cursive; */
-  	font-family: 'Scada', sans-serif;
-  	/* font-family: 'PT Sans', sans-serif; */
-  	font-weight: 700;
   	opacity: .8;
-	font-size: 4rem;
+	font-size: 3rem;
+}
+.quote {
+	font-family: 'Spirax', cursive;
+
 }
 .bum {
 	font-family: 'Abril Fatface', sans-serif;
 	letter-spacing: 1px;
+	font-size: 7rem;
 }
 .menu__nav p {
 	margin: 0px;
@@ -70,33 +73,36 @@ body{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	height: 50vh;
+	height: 45vh;
 }
 .submenu {
 	width: 30%;
+	position: relative;
 	/* outline: 1px solid #fff; */
 }
-.submenu__puzir,
-.submenu__puzir--middle,
-.submenu__puzir--last {
+.submenu__puzir {
 	display: inline-block;
-	width: 50px;
-	height: 50px;
 	border-radius: 50%;
 	border: 2px solid #fff;
 	opacity: 0;
+	position: absolute;
+	top: 20%;
 }
-.submenu__puzir {
+.submenu__puzir--left {
 	width: 50px;
 	height: 50px;
+	left: 5%;
+
 }
 .submenu__puzir--middle {
 	width: 35px;
 	height: 35px;
+	left: 15%;
 }
-.submenu__puzir--last {
+.submenu__puzir--right {
 	width: 60px;
 	height: 60px;
+	left: 30%;
 }
 
 .submenu:hover .submenu__puzir,
@@ -139,7 +145,7 @@ body{
 	/* height: 20vh; */
 }
 .submenu__image {
-	padding: 0 25%;
+	padding: 10% 30%;
 }
 .title:hover {
   animation: blur 3s ease-out infinite;
